@@ -17,7 +17,7 @@ services:
       - wordpress:/var/www/html
 
   db:
-    image: mysql
+    image: mysql@sha256:9d1c923e5f66a89607285ee2641f8a53430a1ccd5e4a62b35eb8a48b74b9ff48
     restart: always
     environment:
       MYSQL_DATABASE: exampledb
