@@ -1,4 +1,4 @@
-FROM dunglas/frankenphp:latest-php8.2@sha256:40aea7f15c7c1872cd2360a93e1db0533e978225033b18be078fc1ca2eb883e2
+FROM dunglas/frankenphp:latest-php8.2@sha256:96c4c874417d1acd2553120bd106746d2224c2ef8b194a03ea9755eff80f4e2b
 
 # install the PHP extensions we need (https://make.wordpress.org/hosting/handbook/handbook/server-environment/#php-extensions)
 RUN install-php-extensions \
