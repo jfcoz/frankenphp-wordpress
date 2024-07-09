@@ -3,5 +3,11 @@
   "forkProcessing": "enabled",
   "extends": [
     "config:best-practices"
+  ],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    }
   ]
 }
