@@ -11,9 +11,9 @@ RUN install-php-extensions \
     imagick \
     opcache
 
-COPY --from=wordpress@sha256:f1356e935ae67b3a3325941d83df4256f875f02a129973e1365f3566e32ef446 /usr/local/etc/php/conf.d/* /usr/local/etc/php/conf.d/
-COPY --from=wordpress@sha256:f1356e935ae67b3a3325941d83df4256f875f02a129973e1365f3566e32ef446 /usr/local/bin/docker-entrypoint.sh /usr/local/bin/
-COPY --from=wordpress@sha256:f1356e935ae67b3a3325941d83df4256f875f02a129973e1365f3566e32ef446 --chown=root:root /usr/src/wordpress /usr/src/wordpress
+COPY --from=wordpress@sha256:632c13f388eec31d73c1f953dda0bf1a7c43bc1c0e9f9799716adc545978617f /usr/local/etc/php/conf.d/* /usr/local/etc/php/conf.d/
+COPY --from=wordpress@sha256:632c13f388eec31d73c1f953dda0bf1a7c43bc1c0e9f9799716adc545978617f /usr/local/bin/docker-entrypoint.sh /usr/local/bin/
+COPY --from=wordpress@sha256:632c13f388eec31d73c1f953dda0bf1a7c43bc1c0e9f9799716adc545978617f --chown=root:root /usr/src/wordpress /usr/src/wordpress
 
 WORKDIR /var/www/html
 VOLUME /var/www/html
